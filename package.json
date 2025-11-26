@@ -1,0 +1,53 @@
+{
+  "name": "toucheart",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "build:web": "expo export:web"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-picker/picker": "2.11.1",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "base-64": "^1.0.0",
+    "expo": "~54.0.0",
+    "expo-asset": "^12.0.10",
+    "expo-blur": "^15.0.7",
+    "expo-constants": "~18.0.10",
+    "expo-file-system": "^19.0.19",
+    "expo-image-picker": "~17.0.8",
+    "expo-localization": "~17.0.7",
+    "expo-location": "~19.0.7",
+    "expo-notifications": "~0.32.13",
+    "expo-sharing": "^14.0.7",
+    "expo-status-bar": "~3.0.8",
+    "firebase": "^10.13.2",
+    "i18next": "^23.15.1",
+    "react": "19.1.0",
+    "react-i18next": "^15.1.0",
+    "react-native": "0.81.5",
+    "react-native-carousel": "^0.1.0",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-maps": "1.20.1",
+    "react-native-pdf": "^7.0.3",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-snap-carousel": "^3.9.1",
+    "react-native-svg": "15.12.1",
+    "react-native-webview": "^13.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.1.10",
+    "babel-preset-expo": "~54.0.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
