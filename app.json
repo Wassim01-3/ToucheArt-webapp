@@ -33,7 +33,27 @@
       ]
     },
     "web": {
-      "favicon": "./app/assets/favicon.png"
+      "favicon": "./app/assets/favicon.png",
+      "bundler": "metro",
+      "name": "ToucheArt",
+      "shortName": "ToucheArt",
+      "themeColor": "#D4A574",
+      "backgroundColor": "#FFFFFF",
+      "display": "standalone",
+      "manifest": {
+        "icons": [
+          {
+            "src": "./app/assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "./app/assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+        ]
+      }
     },
     "plugins": [
       [
