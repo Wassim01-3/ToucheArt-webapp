@@ -27,6 +27,31 @@ import { LoadingSpinner } from '../components/LoadingSpinner';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+// Basic linking configuration so browser back/forward work on web
+const linking = {
+  prefixes: [],
+  config: {
+    screens: {
+      Landing: '',
+      Login: 'login',
+      Register: 'register',
+      SellerRequest: 'seller-request',
+      MainHome: 'home',
+      ProductDetails: 'product/:id',
+      MainTabs: {
+        screens: {
+          Home: 'app',
+          Favorites: 'favorites',
+          Chat: 'chat',
+          Dashboard: 'dashboard',
+          Admin: 'admin',
+        },
+      },
+      Profile: 'profile',
+    },
+  },
+};
+
 const MainTabs = () => {
   const { t } = useLanguage();
   const theme = useTheme();
@@ -176,7 +201,7 @@ export const AppNavigator = () => {
   }
 
   return (
-    <NavigationContainer ref={navigationRef}>
+    <NavigationContainer ref={navigationRef} linking={linking}>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
