@@ -20,6 +20,13 @@ export const UserDropdown = ({ navigation: navProp }) => {
   }
 
   const handleLogout = async () => {
+    // On web, the native Alert API is limited, so we log out directly
+    if (Platform.OS === 'web') {
+      setModalVisible(false);
+      await logout();
+      return;
+    }
+
     Alert.alert(
       t('logout') || 'Logout',
       t('confirmLogout') || 'Are you sure you want to logout?',
